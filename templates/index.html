@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Waves</a>
+  </nav>
+{% endblock %}
+
+{% block body %}
+    <form action="/chatroom" method="POST">
+        <label for="user_name">Enter your name</label>
+        <input class="form-control" type="text" placeholder="Name" name="user_name">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}
